@@ -1,0 +1,27 @@
+{
+  "name": "muaythai_forex_game",
+  "version": "1.0.0",
+  "description": "เกมการ์ดนักมวยไทย Forex - เกมที่ผสมผสานระหว่างกีฬามวยไทยและการเทรด Forex",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "keywords": [
+    "muaythai",
+    "forex",
+    "game",
+    "trading",
+    "card game"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
