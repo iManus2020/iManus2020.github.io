@@ -1,0 +1,663 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navButtonActive {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroText {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #e94560;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #d13652;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.featureIcon {
+  background-color: #e94560;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.featureTitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.callToAction {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.callToActionTitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLeft {
+  max-width: 400px;
+}
+
+.footerTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.footerText {
+  margin: 0.5rem 0;
+  opacity: 0.8;
+}
+
+.footerRight {
+  text-align: right;
+}
+
+/* Battle Arena Styles */
+.battleArena {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.arenaTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.arenaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .arenaGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.teamSection {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.teamTitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.redTeam {
+  color: #e94560;
+}
+
+.blueTeam {
+  color: #4361ee;
+}
+
+.teamStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.battleStatus {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.statusTitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.roundResults {
+  margin-bottom: 2rem;
+}
+
+.roundResult {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.redWin {
+  color: #e94560;
+  font-weight: bold;
+}
+
+.blueWin {
+  color: #4361ee;
+  font-weight: bold;
+}
+
+.startButton {
+  margin-top: auto;
+  text-align: center;
+}
+
+.rules {
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.rulesTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.rulesText {
+  margin: 0.5rem 0;
+}
+
+/* Fighter Card Styles */
+.fighterCard {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fighterCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fighterCard.active {
+  border: 3px solid #e94560;
+}
+
+.fighterImage {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.fighterImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fighterInfo {
+  padding: 0.75rem;
+  flex: 1;
+}
+
+.fighterHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.fighterStyle {
+  font-size: 0.8rem;
+  background-color: #f5f5f5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.fighterRecord {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.fighterName {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.fighterStats {
+  font-size: 0.9rem;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  font-weight: bold;
+}
+
+/* Forex Chart Styles */
+.forexChart {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chartTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.currentPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bullishPrice {
+  color: #22c55e;
+}
+
+.bearishPrice {
+  color: #ef4444;
+}
+
+.chartContainer {
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.chartVisualization {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.candleSticks {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.candle {
+  width: 20px;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+
+.bullishCandle {
+  background-color: #22c55e;
+}
+
+.bearishCandle {
+  background-color: #ef4444;
+}
+
+.powerBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.redSide {
+  color: #e94560;
+  font-weight: bold;
+}
+
+.blueSide {
+  color: #4361ee;
+  font-weight: bold;
+}
+
+.timer {
+  font-weight: bold;
+}
+
+.powerBarWrapper {
+  height: 20px;
+  background-color: #4361ee;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.powerBar {
+  height: 100%;
+  background-color: #e94560;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+.powerBarCenter {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.priceInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.priceBox {
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.priceValue {
+  font-weight: bold;
+}
+
+.priceUp {
+  color: #22c55e;
+}
+
+.priceDown {
+  color: #ef4444;
+}
+
+/* Battle Results Styles */
+.battleResults {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resultsTitle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.resultsList {
+  margin-bottom: 2rem;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.overallResult {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.overallTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.overallWinner {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.redWinner {
+  color: #e94560;
+}
+
+.blueWinner {
+  color: #4361ee;
+}
+
+.drawResult {
+  color: #666;
+}
+
+.resetButton {
+  text-align: center;
+}
+
+.currencyPairInfo {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.currencyPairInfo h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.currencyPairInfo p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .arenaGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .priceInfo {
+    grid-template-columns: 1fr;
+  }
+  
+  .resultItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
